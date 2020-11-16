@@ -3,8 +3,10 @@ package com.example.desafio2.view.adapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.desafio2.R
 import com.example.desafio2.model.Prato
 import com.example.desafio2.model.PratoList
@@ -32,8 +34,8 @@ class DishAdapter(
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(dish: Prato, onItemClicked: (Int) -> Unit): Unit = with(itemView) {
             // carrega imagem
-            //val ivFoto = findViewById<ImageView>(R.id.ivItemDishFoto)
-            //Glide.with(itemView.context).load(dish.imagem).into(ivFoto)
+            val ivItemDishFoto = findViewById<ImageView>(R.id.ivItemDishFoto)
+            Glide.with(itemView.context).load(dish.imagem).into(ivItemDishFoto)
 
             findViewById<TextView>(R.id.tvItemDishNome).text = dish.nome
 

@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.desafio2.R
 import com.example.desafio2.model.Restaurante
 
@@ -35,8 +36,8 @@ class RestaurantAdapter (
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(restaurante:Restaurante, onItemClicked: (Int) -> Unit) : Unit = with(itemView) {
             // carrega imagem
-            //val ivFoto = findViewById<ImageView>(R.id.ivRestauranteFoto)
-            //Glide.with(itemView.context).load(restaurante.imagem).into(ivFoto)
+            val ivRestauranteFoto = findViewById<ImageView>(R.id.ivRestauranteFoto)
+            Glide.with(itemView.context).load(restaurante.imagem).into(ivRestauranteFoto)
 
             findViewById<TextView>(R.id.tvRestauranteNome).text = restaurante.nome
             findViewById<TextView>(R.id.tvRestauranteEndereco).text = restaurante.endereco

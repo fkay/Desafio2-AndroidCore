@@ -18,14 +18,19 @@
         <item name="boxBackgroundColor">@color/white</item>
         <item name="android:textColorHint">@color/textHint</item>
         <item name="hintTextColor">@color/textHint</item>
-        <item name="android:layout_marginStart">20dp</item>
-        <item name="android:layout_marginEnd">20dp</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
     </style>
 
     <style name="EditTextDefault">
-        <item name="android:textSize">16sp</item>
+        <item name="android:textSize">24sp</item>
         <item name="android:textColor">@color/primary</item>
     </style>
 
+    <style name="buttonDefault">
+        <item name="textAllCaps">true</item>
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
 
 </resources>

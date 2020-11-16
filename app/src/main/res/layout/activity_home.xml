@@ -12,6 +12,7 @@
         android:layout_height="match_parent"
         tools:listitem="@layout/item_list_restaurant"
         tools:itemCount="4"
-        android:background="#FFDDDDDD"/>
+        android:background="#FFDDDDDD"
+        android:layout_marginTop="2dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

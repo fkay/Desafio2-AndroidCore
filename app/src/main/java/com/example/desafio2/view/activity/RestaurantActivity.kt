@@ -10,6 +10,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.desafio2.R
 import com.example.desafio2.model.Restaurante
 import com.example.desafio2.view.adapter.DishAdapter
@@ -61,8 +62,8 @@ class RestaurantActivity : AppCompatActivity() {
 
     fun setupRestaurante() {
         //carrega imagem
-        //val ivRestaurantFoto = findViewById<ImageView>(R.id.ivRestaurantFoto)
-        //Glide.with(this.context).load(restaurante.imagem).into(ivRestaurantFoto)
+        val ivRestaurantFoto = findViewById<ImageView>(R.id.ivRestaurantFoto)
+        Glide.with(this).load(restaurante?.imagem).into(ivRestaurantFoto)
 
         findViewById<TextView>(R.id.tvRestaurantNome).text = restaurante?.nome
     }

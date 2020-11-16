@@ -9,6 +9,8 @@ buildscript {
             'material': "1.2.1",
             'lifecycle_version': '2.2.0',
             'fragment': '1.2.5',
+            'glide': '4.11.0',
+            'glideKapt': '4.11.0'
     ]
     repositories {
         google()
