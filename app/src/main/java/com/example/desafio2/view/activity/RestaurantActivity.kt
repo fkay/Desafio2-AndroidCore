@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
@@ -32,6 +33,8 @@ class RestaurantActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_restaurant)
 
+        this.supportActionBar?.hide();
+
         restaurante =   intent.getParcelableExtra<Restaurante>(HomeActivity.KEY_INTENT_RESTAURANTE)
 
         setupRestaurante()
@@ -40,6 +43,10 @@ class RestaurantActivity : AppCompatActivity() {
         viewModel.getPratos(restaurante?.id)
 
         setObservables()
+
+        findViewById<ImageButton>(R.id.ibtnRestauranBack).setOnClickListener(){
+            finish()
+        }
     }
 
     private fun setObservables() {

@@ -2,6 +2,7 @@ package com.example.desafio2.view.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import com.bumptech.glide.Glide
@@ -16,9 +17,15 @@ class PratoActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_prato)
 
+        this.supportActionBar?.hide();
+
         prato = intent.getParcelableExtra<Prato>(RestaurantActivity.KEY_INTENT_PRATO)
 
         setupPrato()
+
+        findViewById<ImageButton>(R.id.ibtnDishBack).setOnClickListener(){
+            finish()
+        }
     }
 
     private fun setupPrato() {

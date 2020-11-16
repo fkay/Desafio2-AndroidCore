@@ -11,9 +11,14 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_register)
 
-        findViewById<AppCompatButton>(R.id.btRegisterRegister).setOnClickListener() {
-            startActivity(Intent(this, HomeActivity::class.java))
+        this.supportActionBar?.title = "Register"
 
+        findViewById<AppCompatButton>(R.id.btRegisterRegister).setOnClickListener() {
+            val intent = Intent(this, HomeActivity::class.java)
+
+            // tira activity de login
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+            startActivity(intent)
             finish()
         }
     }

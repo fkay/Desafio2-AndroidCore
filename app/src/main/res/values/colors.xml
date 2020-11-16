@@ -8,6 +8,7 @@
     <color name="black">#FF000000</color>
     <color name="textBlack">#FF1F2D3D</color>
     <color name="textGray">#FF8492A6</color>
+    <color name="textPratos">#FF5A6978</color>
     <color name="white">#FFFFFFFF</color>
     <color name="textHint">#FF8492A6</color>
     <color name="primary">#FF3F51B5</color>

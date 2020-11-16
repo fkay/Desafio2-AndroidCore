@@ -32,7 +32,7 @@ class SplashActivity : AppCompatActivity() {
         }, splashTime)
 
         findViewById<ConstraintLayout>(R.id.splashScreen).setOnClickListener(){
-            mHandler?.removeCallbacksAndMessages(null);
+            mHandler.removeCallbacksAndMessages(null);
 
             startActivity(Intent(this,LoginActivity::class.java))
 
