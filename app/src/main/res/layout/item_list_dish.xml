@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    android:id="@+id/vgDishItemContainer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/ivItemDishFoto"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tvItemDishNome"
+            android:layout_width="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textGray"
+            android:textSize="16sp"
+            tools:text = "Nome do Prato"/>
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

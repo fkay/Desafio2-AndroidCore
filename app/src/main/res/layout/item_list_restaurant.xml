@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vgRestaurantItemContainer"
+    android:background="?attr/selectableItemBackground"
+    >
+
+    <ImageView
+        android:id="@+id/ivRestauranteFoto"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:scaleType="centerCrop"
+        tools:src = "@tools:sample/avatars"
+        />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/ivRestauranteFoto"
+        app:layout_constraintStart_toStartOf="@id/ivRestauranteFoto"
+        app:layout_constraintEnd_toEndOf="@id/ivRestauranteFoto"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tvRestauranteNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toStartOf="@id/ivRestauranteFoto"
+            app:layout_constraintTop_toBottomOf="@id/ivRestauranteFoto"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/textBlack"
+            tools:text = "Nome do Restaurante"
+            />
+
+        <TextView
+            android:id="@+id/tvRestauranteEndereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textSize="16dp"
+            android:textColor="@color/textGray"
+            tools:text="Av talt talt, 548"
+            />
+
+        <TextView
+            android:id="@+id/tvRestauranteHorario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:textSize="16dp"
+            android:textColor="@color/textGray"
+            tools:text="Fecha as 22:00"
+            />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
