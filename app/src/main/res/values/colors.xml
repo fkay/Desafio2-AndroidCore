@@ -15,5 +15,6 @@
     <color name="primaryVariant">#FF303F9F</color>
     <color name="buttonRed">#FFFF5252</color>
     <color name="buttonGrey">#FF8492A6</color>
-    <color name="separator">#FF47525E</color>
+    <color name="separatorText">#FF47525E</color>
+    <color name="separatorLine">#FFC0CCDA</color>
 </resources>

@@ -7,7 +7,7 @@
     tools:context=".view.activity.LoginActivity">
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilEmail"
+        android:id="@+id/tilLoginEmail"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         style="@style/TextInputLayoutDefault"
@@ -19,7 +19,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             style="@style/EditTextDefault"
-            android:id="@+id/etEmail"
+            android:id="@+id/etLoginEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
@@ -28,19 +28,19 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilSenha"
+        android:id="@+id/tilLoginSenha"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         style="@style/TextInputLayoutDefault"
         android:hint="Password"
         android:layout_marginTop="12dp"
-        app:layout_constraintTop_toBottomOf="@+id/tilEmail"
+        app:layout_constraintTop_toBottomOf="@+id/tilLoginEmail"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             style="@style/EditTextDefault"
-            android:id="@+id/etSenha"
+            android:id="@+id/etLoginSenha"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
@@ -56,9 +56,9 @@
         android:text="LOG IN"
         android:backgroundTint="@color/buttonRed"
         android:layout_marginTop="67dp"
-        app:layout_constraintTop_toBottomOf="@id/tilSenha"
-        app:layout_constraintStart_toStartOf="@id/tilSenha"
-        app:layout_constraintEnd_toEndOf="@id/tilSenha"
+        app:layout_constraintTop_toBottomOf="@id/tilLoginSenha"
+        app:layout_constraintStart_toStartOf="@id/tilLoginSenha"
+        app:layout_constraintEnd_toEndOf="@id/tilLoginSenha"
         app:layout_constraintStart_toEndOf="parent"
 
         />
@@ -66,10 +66,10 @@
     <View
         android:layout_width="0dp"
         android:layout_height="1dp"
-        android:background="@color/separator"
+        android:background="@color/separatorLine"
         app:layout_constraintTop_toBottomOf="@+id/btLogin"
-        app:layout_constraintStart_toStartOf="@id/tilSenha"
-        app:layout_constraintEnd_toEndOf="@id/tilSenha"
+        app:layout_constraintStart_toStartOf="@id/tilLoginSenha"
+        app:layout_constraintEnd_toEndOf="@id/tilLoginSenha"
         android:layout_marginTop="52dp"
         />
 
@@ -80,17 +80,18 @@
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
         app:layout_constraintTop_toBottomOf="@id/btLogin"
-        app:layout_constraintStart_toStartOf="@id/tilSenha"
-        app:layout_constraintEnd_toEndOf="@id/tilSenha"
+        app:layout_constraintStart_toStartOf="@id/tilLoginSenha"
+        app:layout_constraintEnd_toEndOf="@id/tilLoginSenha"
         android:text="OR"
-        android:textColor="@color/separator"
+        android:textSize="18sp"
+        android:textColor="@color/separatorText"
         android:background="@color/white"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="40dp"
         android:textAlignment="center"
         />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btRegister"
+        android:id="@+id/btLoginRegister"
         android:layout_width="0dp"
         style="@style/buttonDefault"
         android:layout_height="wrap_content"
@@ -98,8 +99,8 @@
         android:backgroundTint="@color/buttonGrey"
         android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@id/tilSenha"
-        app:layout_constraintEnd_toEndOf="@id/tilSenha"/>
+        app:layout_constraintStart_toStartOf="@id/tilLoginSenha"
+        app:layout_constraintEnd_toEndOf="@id/tilLoginSenha"/>
 
 
 
