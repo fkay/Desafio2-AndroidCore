@@ -1,6 +1,5 @@
 package com.example.desafio2.model.home
 
-import com.example.desafio2.model.Prato
 import com.example.desafio2.model.PratoList
 import com.example.desafio2.model.Restaurante
 

@@ -16,7 +16,7 @@
         android:background="@color/black"
         android:scaleType="centerCrop"
         app:layout_constraintTop_toTopOf="parent"
-        />
+        android:contentDescription="@string/foto_do_restaurante" />
 
     <ImageButton
         android:id="@+id/ibtnRestauranBack"
@@ -28,7 +28,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="10dp"
         android:src="@drawable/ic_baseline_arrow_back_24"
-        />
+        android:contentDescription="@string/voltar" />
 
     <TextView
         android:id="@+id/tvRestaurantNome"
@@ -53,7 +53,7 @@
         app:layout_constraintTop_toBottomOf="@id/ivRestaurantFoto"
         app:layout_constraintStart_toStartOf="@id/ivRestaurantFoto"
         android:layout_marginStart="20dp"
-        android:text="Pratos principais"/>
+        android:text="@string/pratos_principais"/>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvRestaurantDishList"

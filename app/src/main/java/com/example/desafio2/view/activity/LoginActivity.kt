@@ -20,8 +20,6 @@ class LoginActivity : AppCompatActivity() {
         initComponents()
 
         setObservables()
-
-
     }
 
     private fun setObservables() {

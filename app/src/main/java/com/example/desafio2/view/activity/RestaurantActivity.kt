@@ -9,14 +9,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.desafio2.R
 import com.example.desafio2.model.Restaurante
 import com.example.desafio2.view.adapter.DishAdapter
-import com.example.desafio2.view.adapter.RestaurantAdapter
-import com.example.desafio2.viewModel.HomeViewModel
 import com.example.desafio2.viewModel.RestaurantViewModel
 
 class RestaurantActivity : AppCompatActivity() {

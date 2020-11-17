@@ -8,7 +8,6 @@ import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.example.desafio2.R
 import com.example.desafio2.model.Prato
-import com.example.desafio2.model.Restaurante
 
 class PratoActivity : AppCompatActivity() {
     private var prato: Prato? = null

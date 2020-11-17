@@ -14,7 +14,8 @@
             android:id="@+id/ivItemDishFoto"
             android:layout_width="match_parent"
             android:layout_height="120dp"
-            android:scaleType="centerCrop"/>
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/foto_do_prato" />
 
         <TextView
             android:id="@+id/tvItemDishNome"

@@ -2,7 +2,6 @@ package com.example.desafio2.model
 
 import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
-import kotlinx.android.parcel.RawValue
 
 @Parcelize
 data class Restaurante (
