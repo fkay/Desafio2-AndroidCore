@@ -3,7 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.activity.HomeActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.activity.HomeActivity"
+    android:background="#FFDDDDDD">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvHomeRestaurantList"
@@ -12,6 +14,6 @@
         tools:listitem="@layout/item_list_restaurant"
         tools:itemCount="4"
         android:background="#FFDDDDDD"
-        android:layout_marginTop="2dp"/>
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

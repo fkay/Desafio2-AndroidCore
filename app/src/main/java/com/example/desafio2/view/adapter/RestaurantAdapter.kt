@@ -5,11 +5,11 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.desafio2.R
 import com.example.desafio2.model.Restaurante
+import com.google.android.material.card.MaterialCardView
 
 class RestaurantAdapter (
     private val restaurantList: List<Restaurante>,
@@ -43,7 +43,7 @@ class RestaurantAdapter (
             findViewById<TextView>(R.id.tvRestauranteEndereco).text = restaurante.endereco
             findViewById<TextView>(R.id.tvRestauranteHorario).text = "Fechas as ${restaurante.horario}"
 
-            findViewById<ConstraintLayout>(R.id.vgRestaurantItemContainer).setOnClickListener {
+            findViewById<MaterialCardView>(R.id.vgRestaurantItemContainer).setOnClickListener {
                 onItemClicked(adapterPosition)
             }
         }
